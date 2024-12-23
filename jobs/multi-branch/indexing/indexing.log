@@ -1,0 +1,42 @@
+Started
+[Mon Dec 23 18:17:41 UTC 2024] Starting branch indexing...
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git ls-remote --symref -- https://github.com/sawsansalah/Boardgame.git # timeout=10
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/caches/git-43196ed730573946355959fe0282315a/.git # timeout=10
+Setting origin to https://github.com/sawsansalah/Boardgame.git
+ > git config remote.origin.url https://github.com/sawsansalah/Boardgame.git # timeout=10
+Fetching & pruning origin...
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git ls-remote -h -- https://github.com/sawsansalah/Boardgame.git # timeout=10
+Fetching upstream changes from origin
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --force --progress --prune -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking branches...
+  Checking branch pre-prod
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+  Checking branch prod
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+  Checking branch feature/add-butt
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+  Checking branch qa
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+  Checking branch main
+      ‘Jenkinsfile’ found
+    Met criteria
+Changes detected: main (d6f3b45975573866c191c85c56c55a50cf33533a → 1cdef2067c46b0a156189a100f268ceb751d58f3)
+Scheduled build for branch: main
+  Checking branch dev
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: dev (still at 75b9aa95e216b232c139dc438f119d22417b27d9)
+Processed 6 branches
+[Mon Dec 23 18:17:46 UTC 2024] Finished branch indexing. Indexing took 4.4 sec
+Finished: SUCCESS
